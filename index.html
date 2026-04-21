@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BuyAnythingX - Online Store</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<meta name="description" content="BuyAnythingX - Best online shopping store in Pakistan">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-content">
+
+        <h1 class="logo">BuyAnythingX</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navMenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-content">
+
+        <div>
+            <h2>Shop Everything You Need</h2>
+            <p>Best quality products at affordable prices. Cash on Delivery available all over Pakistan.</p>
+
+            <a href="#products" class="btn">Start Shopping</a>
+        </div>
+
+        <img src="Images/logo (2).jpeg" class="hero-img">
+
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="section bg" id="products">
+
+    <h2 class="title">Featured Products</h2>
+
+    <div class="grid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product">
+
+            <a href="product.html?name=Coffee%20Beater&price=1150&img=images/Coffe%20Beater.jpeg">
+                <img src="images/Coffe Beater.jpeg">
+            </a>
+
+            <a href="product.html?name=Coffee%20Beater&price=1150&img=images/Coffe%20Beater.jpeg">
+                <h3>Coffee Beater</h3>
+            </a>
+
+            <p>Rechargeable coffee beater</p>
+            <h4>Rs 1150</h4>
+
+            <button onclick="addToCart('Coffee Beater',1150)">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product">
+
+            <a href="product.html?name=Laptop%20Table&price=1550&img=images/Laptop%20table.jpeg">
+                <img src="images/Laptop table.jpeg">
+            </a>
+
+            <a href="product.html?name=Laptop%20Table&price=1550&img=images/Laptop%20table.jpeg">
+                <h3>Laptop Table</h3>
+            </a>
+
+            <p>Premium quality table</p>
+            <h4>Rs 1550</h4>
+
+            <button onclick="addToCart('Laptop Table',1550)">Add to Cart</button>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product">
+
+            <a href="product.html?name=Cooling%20Fan&price=1700&img=images/Mini%20Electric%20Fan.jpeg">
+                <img src="images/Mini Electric Fan.jpeg">
+            </a>
+
+            <a href="product.html?name=Cooling%20Fan&price=1700&img=images/Mini%20Electric%20Fan.jpeg">
+                <h3>Cooling Fan</h3>
+            </a>
+
+            <p>Water spray cooling fan</p>
+            <h4>Rs 1700</h4>
+
+            <button onclick="addToCart('Cooling Fan',1700)">Add to Cart</button>
+        </div>
+        <!-- PRODUCT 4 -->
+        <div class="product">
+
+            <a href="product.html?name=Collage%20Bag&price=1150&img=images/Collage%20Bag%20for%20girls.jpeg">
+                <img src="Images/Collage bag for girls.jpeg">
+            </a>
+
+            <a href="product.html?name=Collage%20bag&price=1150&img=images/Collage%20Bag%20for%20girls.jpeg">
+                <h3>Collage Bag</h3>
+            </a>
+
+            <p>Collage Bag For Girls</p>
+            <h4>Rs 1150</h4>
+
+            <button onclick="addToCart('Collage Bag',1150)">Add to Cart</button>
+        </div>
+        <!-- PRODUCT 5 -->
+        <div class="product">
+
+            <a href="product.html?name=Ladies%20Clothes&price=1150&img=images/Ladies%20Clothes.jpeg">
+                <img src="Images/Ladies Clothes.jpeg">
+            </a>
+
+            <a href="product.html?name=Ladies%20Clothes&price=1150&img=images/Ladies%20Clothes.jpeg">
+                <h3>Ladies Clothes</h3>
+            </a>
+
+            <p>Best Quality Ladies Clothes</p>
+            <h4>Rs 1150</h4>
+
+            <button onclick="addToCart('Ladies Clothes',1150)">Add to Cart</button>
+        </div>
+        <!-- PRODUCT 6 -->
+        <div class="product">
+
+            <a href="product.html?name=Makeup%20Organizer&price=1150&img=images/Makeup%20Organizer.jpeg">
+                <img src="Images/Makeup organizer.jpeg">
+            </a>
+
+            <a href="product.html?name=Makeup%20Organizer&price=1150&img=images/Makeup%20Organizer.jpeg">
+                <h3>Makeup Organizer</h3>
+            </a>
+
+            <p>Makeup Organizer</p>
+            <h4>Rs 1150</h4>
+
+            <button onclick="addToCart('Makeup Organizer',1150)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>BuyAnythingX</h3>
+            <p>Your one-stop shop for everything you need. Quality products at best prices.</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Support</h4>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">TikTok</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 BuyAnythingX | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<!-- JS -->
+<script>
+function addToCart(name, price){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({name:name, price:price});
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added to cart ✅");
+}
+</script>
+
+<script>
+function toggleMenu(){
+    document.querySelector(".nav").classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const menu = document.querySelector(".nav");
+    const btn = document.querySelector(".menu-btn"); // ☰ button
+
+    // link click pe close
+    document.querySelectorAll(".nav a").forEach(link=>{
+        link.addEventListener("click", ()=>{
+            menu.classList.remove("show");
+        });
+    });
+
+    // OUTSIDE click pe close (MAIN FIX)
+    document.addEventListener("click", function(e){
+
+        if(menu.classList.contains("show")){
+
+            if(!menu.contains(e.target) && !btn.contains(e.target)){
+                menu.classList.remove("show");
+            }
+
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>

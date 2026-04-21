@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ - BuyAnythingX</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-content">
+
+        <h1 class="logo">BuyAnythingX</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navMenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+    </div>
+</header>
+
+<!-- FAQ SECTION -->
+<section class="section">
+    <div class="container" style="max-width:800px; margin:auto;">
+
+        <h2 class="title" style="text-align:center;">Frequently Asked Questions</h2>
+
+        <div style="margin-bottom:20px;">
+            <h3>1. Do you offer Cash on Delivery?</h3>
+            <p>Yes, we offer Cash on Delivery all over Pakistan.</p>
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <h3>2. How long does delivery take?</h3>
+            <p>Delivery usually takes 2 to 5 working days depending on your location.</p>
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <h3>3. Can I return a product?</h3>
+            <p>Yes, you can return products within 3 days if they are damaged or incorrect.</p>
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <h3>4. How can I place an order?</h3>
+            <p>Simply add products to cart, go to checkout, and confirm your order on WhatsApp.</p>
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <h3>5. Is online payment available?</h3>
+            <p>Currently we support Cash on Delivery only.</p>
+        </div>
+
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>BuyAnythingX</h3>
+            <p>Your one-stop shop for everything you need. Quality products at best prices.</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Support</h4>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">TikTok</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 BuyAnythingX | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<script>
+function toggleMenu(){
+    document.querySelector(".nav").classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const menu = document.querySelector(".nav");
+    const btn = document.querySelector(".menu-btn");
+
+    // link click close
+    document.querySelectorAll(".nav a").forEach(link=>{
+        link.addEventListener("click", ()=>{
+            menu.classList.remove("show");
+        });
+    });
+
+    // outside click close
+    document.addEventListener("click", function(e){
+        if(menu.classList.contains("show")){
+            if(!menu.contains(e.target) && !btn.contains(e.target)){
+                menu.classList.remove("show");
+            }
+        }
+    });
+
+});
+</script>
+
+</body>
+</html>
