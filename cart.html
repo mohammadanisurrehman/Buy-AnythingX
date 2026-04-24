@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Cart - BuyAnythingX</title>
 <link rel="stylesheet" href="css/style.css">
-<a href="index.html">⬅ Continue Shopping</a>
+
 
 </head>
 <body>
@@ -13,7 +13,6 @@
 <!-- HEADER -->
 <header class="header">
     <div class="container header-content">
-
         <h1 class="logo">BuyAnythingX</h1>
 
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -21,7 +20,7 @@
         <nav id="navMenu">
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Shop</a></li>
+                <li><a href="product.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="checkout.html">Checkout</a></li>
                 <li><a href="about.html">About</a></li>
@@ -58,7 +57,7 @@
         <div class="footer-box">
             <h4>Quick Links</h4>
             <a href="index.html">Home</a>
-            <a href="product.html">Shop</a>
+            <a href="product.html">Products</a>
             <a href="cart.html">Cart</a>
             <a href="checkout.html">Checkout</a>
         </div>
@@ -96,16 +95,16 @@ function displayCart(){
     let total = 0;
 
     cart.forEach((item, index)=>{
-        total += item.price;
+    total += Number(item.price);
 
-        container.innerHTML += `
-            <div class="product">
-                <h3>${item.name}</h3>
-                <p>Rs ${item.price}</p>
-                <button onclick="removeItem(${index})">Remove</button>
-            </div>
-        `;
-    });
+    container.innerHTML += `
+        <div class="product">
+            <h3>${item.name}</h3>
+            <p>Rs ${item.price}</p>
+            <button onclick="removeItem(${index})">Remove</button>
+        </div>
+    `;
+});
 
     document.getElementById("total").innerText = "Total: Rs " + total;
 
