@@ -1,257 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BuyAnythingX - Online Store</title>
+    <title>BuyAnythingX - Online Store</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<meta name="description" content="BuyAnythingX - Best online shopping store in Pakistan">
+    <meta name="description" content="BuyAnythingX - Best online shopping store in Pakistan">
 
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="container header-content">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
 
-        <h1 class="logo">BuyAnythingX</h1>
+            <h1 class="logo">BuyAnythingX</h1>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-        <nav id="navMenu">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faqs.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav id="navMenu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <div class="cart">
-            🛒 <span id="cart-count">0</span>
+            <div class="cart">
+                🛒 <span id="cart-count">0</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero-slider">
+
+    <div class="slides">
+
+        <div class="slide active">
+            <img src="Images/logo.jpeg">
+            <div class="caption">
+                <h2>Shop Everything You Need 🛍️</h2>
+                <p>Best quality products at best prices</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/slider2.jpg">
+            <div class="caption">
+                <h2>Cash On Delivery 🚚</h2>
+                <p>All over Pakistan available</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Images/slider 3.jpeg">
+            <div class="caption">
+                <h2>Latest Trending Products 🔥</h2>
+                <p>Grab your deal now</p>
+            </div>
         </div>
 
     </div>
-</header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="container hero-content">
-
-        <div>
-            <h2>Shop Everything You Need</h2>
-            <p>Best quality products at affordable prices. Cash on Delivery available all over Pakistan.</p>
-
-            <a href="#products" class="btn">Start Shopping</a>
-        </div>
-
-        <img src="Images/logo (2).jpeg" class="hero-img">
-
-    </div>
 </section>
 
-<!-- PRODUCTS SECTION -->
-<section class="section bg" id="products">
+    <!-- PRODUCTS SECTION -->
+    <section class="section bg" id="products">
 
-    <h2 class="title">Featured Products</h2>
+        <h2 class="title">Featured Products</h2>
 
-    <div class="grid">
+        <div class="grid">
 
-        <!-- PRODUCT 1 -->
-        <div class="product">
+            <!-- PRODUCT 1 -->
+            <div class="product">
 
-            <a href="product.html?name=Air%20Conditionar%20Cover&price=500&img=images/Air%20Conditionar%20Cover.jpeg">
-                <img src="Images/Air conditionar cover.jpeg">
-            </a>
+                <a
+                    href="product.html?name=Air%20Conditionar%20Cover&price=500&img=images/Air-Conditionar-Cover.jpeg&desc=New Mini Led Digital Fan With Light *Rs 650*">
+                    <img src="Images/Air-conditionar-cover.jpeg">
+                </a>
 
-            <a href="product.html?name=Air%20Conditionar%20Cover&price=500&img=images/Air%20conditionar%20cover.jpeg">
-                <h3>Air Conditioner Cover</h3>
-            </a>
+                <a
+                    href="product.html?name=Air%20Conditionar%20Cover&price=500&img=images/Air-conditionar-cover.jpeg">
+                    <h3>Air Conditioner Cover</h3>
+                </a>
 
-            <p>Window Air Conditioner Cover for Outside Units, Waterproof Window AC Unit Cover Sun Shade UV Defense</p>
-            <h4>Rs 500/-</h4>
+                <p>Window Air Conditioner Cover for Outside Units, Waterproof Window AC Unit Cover Sun Shade UV Defense
+                </p>
+                <h4>Rs 500/-</h4>
 
-            <button onclick="addToCart('Air Conditionar Cover',500)">Add to Cart</button>
+                <button onclick="addToCart('Air Conditionar Cover',500)">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+
+                <a href="product.html?name=Folding%20Laptop%20Stand&price=950&img=images/Folding-Laptop-Stand.jpeg&desc=Folding Laptop Stand (Discount on Quantity)">
+                    <img src="Images/Folding-Laptop-Stand.jpeg">
+                </a>
+
+                <a href="product.html?name=Folding%20Laptop%20Stand&price=950&img=images/Folding-Laptop-Stand.jpeg">
+                    <h3>Folding Laptop Stand</h3>
+                </a>
+
+                <p>Folding Laptop Stand (Discount on Quantity)</p>
+                <h4>Rs 950/-</h4>
+
+                <button onclick="addToCart('Folding Laptop Stand',950)">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product">
+
+                <a href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=images/Microfiber-Flat-Mop.jpeg&desc=Microfiber Flat Mop (Random Colour)">
+                    <img src="Images/Microfiber-Flat-Mop.jpeg">
+                </a>
+
+                <a href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=images/Microfiber-Flat-Mop.jpeg">
+                    <h3>Microfiber Flat Mop</h3>
+                </a>
+
+                <p>Microfiber Flat Mop (Random Colour)</p>
+                <h4>Rs 850/-</h4>
+
+                <button onclick="addToCart('Microfiber Flat Mop',850)">Add to Cart</button>
+            </div>
+            <!-- PRODUCT 4 -->
+            <div class="product">
+
+                <a href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=images/Rotating-Spice-Rack.jpeg&desc=Ferris 18 Jars Rotating Spice Rack">
+                    <img src="Images/Rotating-Spice-Rack.jpeg">
+                </a>
+
+                <a href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=images/Rotating-Spice-Rack.jpeg">
+                    <h3>Rotating Spice Rack</h3>
+                </a>
+
+                <p>Ferris 18 Jar Rotating Spice Rack (Box Packing) - Premium Quality</p>
+                <h4>Rs 3250/-</h4>
+
+                <button onclick="addToCart('Rotating Spice Rack',3250)">Add to Cart</button>
+            </div>
+            <!-- PRODUCT 5 -->
+            <div class="product">
+
+                <a href="product.html?name=Vegetable%20Cutter&price=1350&img=images/Vegetable-Cutter.jpeg&desc=16in1 Vegetable Cutter(Premium Quality)">
+                    <img src="Images/Vegetable-Cutter.jpeg">
+                </a>
+
+                <a href="product.html?name=Vegetable%20Cutter&price=1350&img=images/Vegetable-Cutter.jpeg">
+                    <h3>Vegetable Cutter</h3>
+                </a>
+
+                <p>16in1 Vegetable Cutter (Box Packing) - Premium Quality - Big Size</p>
+                <h4>Rs 1350/-</h4>
+
+                <button onclick="addToCart('Vegetable Cutter',1350)">Add to Cart</button>
+            </div>
+            <!-- PRODUCT 6 -->
+            <div class="product">
+
+                <a
+                    href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=images/Mosquito-Racket.jpeg&desc=Rechargeable Mosquito Racket(With Box)">
+                    <img src="Images/Mosquito-Racket.jpeg">
+                </a>
+
+                <a
+                    href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=images/Mosquito-Racket.jpeg">
+                    <h3>Rechargeable Mosquito Racket</h3>
+                </a>
+
+                <p>Rechargeable Mosquito Racket (With Box)</p>
+                <h4>Rs 1650</h4>
+
+                <button onclick="addToCart('Rechargeable Mosquito Racket',1650)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>BuyAnythingX</h3>
+                <p>Your one-stop shop for everything you need. Quality products at best prices.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <!-- <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a> -->
+            </div>
+
+            <div class="footer-box">
+                <h4>Support</h4>
+                <a href="contact.html">Contact</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="footer-box">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/share/1JUhKdoUet/">Facebook</a>
+                <a href="https://www.instagram.com/buyanythingx?igsh=MXhteG95OWJkYjY5ZA==">Instagram</a>
+                <a href="https://wa.me/923491483899?text=">WhatsApp</a>
+                <a href="https://www.tiktok.com/@buyanythingx?_r=1&_t=ZS-95uTwDSIgvF">TikTok</a>
+            </div>
+
         </div>
 
-        <!-- PRODUCT 2 -->
-        <div class="product">
-
-            <a href="product.html?name=Folding%20Laptop%20Stand&price=950&img=images/Folding%20Laptop%20Stand.jpeg">
-                <img src="Images/Folding Laptop Stand.jpeg">
-            </a>
-
-            <a href="product.html?name=Folding%20Laptop%20Stand&price=950&img=images/Folding%20Laptop%20Stand.jpeg">
-                <h3>Folding Laptop Stand</h3>
-            </a>
-
-            <p>Folding Laptop Stand (Discount on Quantity)</p>
-            <h4>Rs 950/-</h4>
-
-            <button onclick="addToCart('Folding Laptop Stand',950)">Add to Cart</button>
+        <div class="footer-bottom">
+            <p>© 2026 BuyAnythingX | All Rights Reserved</p>
         </div>
 
-        <!-- PRODUCT 3 -->
-        <div class="product">
+    </footer>
 
-            <a href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=images/Microfiber%20Flat%20Mop.jpeg">
-                <img src="Images/Microfiber Flat Mop.jpeg">
-            </a>
+    <!-- JS -->
+    <script>
+        function addToCart(name, price) {
 
-            <a href="product.html?name=Microfiber%20Flat%20Mop&price=850&img=images/Microfiber%20Flat%20Mop.jpeg">
-                <h3>Microfiber Flat Mop</h3>
-            </a>
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            <p>Microfiber Flat Mop  (Random Colour)</p>
-            <h4>Rs 850/-</h4>
+            cart.push({ name: name, price: price });
 
-            <button onclick="addToCart('Microfiber Flat Mop',850)">Add to Cart</button>
-        </div>
-        <!-- PRODUCT 4 -->
-        <div class="product">
+            localStorage.setItem("cart", JSON.stringify(cart));
 
-            <a href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=images/Rotating%20Spice%20Rack.jpeg">
-                <img src="Images/Rotating Spice Rack.jpeg">
-            </a>
+            alert("Added to cart ✅");
+        }
+    </script>
 
-            <a href="product.html?name=Rotating%20Spice%20Rack&price=3250&img=images/Rotating%20Spice%20Rack.jpeg">
-                <h3>Rotating Spice Rack</h3>
-            </a>
-
-            <p>Ferris 18 Jar Rotating Spice Rack (Box Packing) - Premium Quality</p>
-            <h4>Rs 3250/-</h4>
-
-            <button onclick="addToCart('Rotating Spice Rack',3250)">Add to Cart</button>
-        </div>
-        <!-- PRODUCT 5 -->
-        <div class="product">
-
-            <a href="product.html?name=Vegetable%20Cutter&price=1350&img=images/Vegetable%20Cutter.jpeg">
-                <img src="Images/Vegetable Cutter.jpeg">
-            </a>
-
-            <a href="product.html?name=Vegetable%20Cutter&price=1350&img=images/Vegetable%20Cutter.jpeg">
-                <h3>Vegetable Cutter</h3>
-            </a>
-
-            <p>16in1 Vegetable Cutter  (Box Packing) - Premium Quality - Big Size</p>
-            <h4>Rs 1350/-</h4>
-
-            <button onclick="addToCart('Vegetable Cutter',1350)">Add to Cart</button>
-        </div>
-        <!-- PRODUCT 6 -->
-        <div class="product">
-
-            <a href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=images/Mosquito%20Racket.jpeg">
-                <img src="Images/Mosquito Racket.jpeg">
-            </a>
-
-            <a href="product.html?name=Rechargeable%20Mosquito%20Racket&price=1650&img=images/Mosquito%20Racket.jpeg">
-                <h3>Rechargeable Mosquito Racket</h3>
-            </a>
-
-            <p>Rechargeable Mosquito Racket  (With Box)</p>
-            <h4>Rs 1650</h4>
-
-            <button onclick="addToCart('Rechargeable Mosquito Racket',1650)">Add to Cart</button>
-        </div>
-
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div class="footer-box">
-            <h3>BuyAnythingX</h3>
-            <p>Your one-stop shop for everything you need. Quality products at best prices.</p>
-        </div>
-
-        <div class="footer-box">
-            <h4>Quick Links</h4>
-            <a href="index.html">Home</a>
-            <a href="product.html">Products</a>
-            <a href="cart.html">Cart</a>
-            <a href="checkout.html">Checkout</a>
-        </div>
-
-        <div class="footer-box">
-            <h4>Support</h4>
-            <a href="contact.html">Contact</a>
-            <a href="faqs.html">FAQs</a>
-            <a href="about.html">About</a>
-        </div>
-
-        <div class="footer-box">
-            <h4>Follow Us</h4>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
-            <a href="#">TikTok</a>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 BuyAnythingX | All Rights Reserved</p>
-    </div>
-
-</footer>
-
-<!-- JS -->
-<script>
-function addToCart(name, price){
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    cart.push({name:name, price:price});
-
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    alert("Added to cart ✅");
-}
-</script>
-
-<script>
-function toggleMenu(){
-    document.querySelector(".nav").classList.toggle("show");
-}
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    const menu = document.querySelector(".nav");
-    const btn = document.querySelector(".menu-btn"); // ☰ button
-
-    // link click pe close
-    document.querySelectorAll(".nav a").forEach(link=>{
-        link.addEventListener("click", ()=>{
-            menu.classList.remove("show");
-        });
-    });
-
-    // OUTSIDE click pe close (MAIN FIX)
-    document.addEventListener("click", function(e){
-
-        if(menu.classList.contains("show")){
-
-            if(!menu.contains(e.target) && !btn.contains(e.target)){
-                menu.classList.remove("show");
-            }
-
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav").classList.toggle("show");
         }
 
-    });
+        document.addEventListener("DOMContentLoaded", function () {
 
-});
+            const menu = document.querySelector(".nav");
+            const btn = document.querySelector(".menu-btn"); // ☰ button
+
+            // link click pe close
+            document.querySelectorAll(".nav a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("show");
+                });
+            });
+
+            // OUTSIDE click pe close (MAIN FIX)
+            document.addEventListener("click", function (e) {
+
+                if (menu.classList.contains("show")) {
+
+                    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                        menu.classList.remove("show");
+                    }
+
+                }
+
+            });
+
+        });
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+
+    index++;
+    if(index >= slides.length) index = 0;
+}
+
+setInterval(showSlide, 3000);
 </script>
 
 </body>
+
 </html>
