@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy AnythingX — Premium Fashion &amp; Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="utility-bar">
+  <span>PAK-WIDE DELIVERY</span>
+  <span>CASH ON DELIVERY AVAILABLE</span>
+  <span><a href="https://wa.me/923491483899" target="_blank" rel="noopener" style="color:inherit;">WHATSAPP: 0349-1483899</a></span>
+</div>
+
+<header>
+  <div class="nav-wrap">
+    <a href="#" class="logo-mark">
+      <img src="images/buyanythingx.logo.jpeg" alt="Buy AnythingX logo" class="brand-logo brand-logo-sm">
+      <span class="logo-text">Buy Anything<span class="x">X</span></span>
+    </a>
+    <nav class="links">
+      <a href="#cat-ladies-unstitched">Ladies</a>
+      <a href="#cat-gents-stitched">Gents</a>
+      <a href="#cat-home">Home &amp; Kitchen</a>
+      <a href="#why">Why Us</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="search-pill">🔍 <input type="text" placeholder="Search product..." /></div>
+      <button class="icon-btn" aria-label="Cart" onclick="openDrawer()">BAG<span class="cart-count" id="cartCount">0</span></button>
+      <button class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active"><img src="images/silk-LONG PRINTED-(2PC).jpeg" alt=""><div class="hero-slide-overlay"></div></div>
+    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1400&q=80" alt=""><div class="hero-slide-overlay"></div></div>
+    <div class="hero-slide"><img src="images/Ladies Clothes.jpeg" alt=""><div class="hero-slide-overlay"></div></div>
+  </div>
+  <button class="hero-arrow prev" onclick="shiftHero(-1)" aria-label="Previous slide">‹</button>
+  <button class="hero-arrow next" onclick="shiftHero(1)" aria-label="Next slide">›</button>
+  <div class="hero-frame">
+    <img src="images/buyanythingx.logo.jpeg" alt="Buy AnythingX logo" class="brand-logo brand-logo-lg">
+    <div class="hero-eyebrow">Est. Karachi · Premium Everyday Essentials</div>
+    <h1>The <em class="foil">house</em> for what<br>you actually wear &amp; use.</h1>
+    <p class="lede">Stitched &amp; unstitched fabric, ready-to-wear, and the kitchen &amp; home pieces worth owning — curated under one roof, delivered anywhere in Pakistan.</p>
+    <div class="hero-ctas">
+      <button class="btn btn-primary" onclick="document.getElementById('cat-ladies-unstitched').scrollIntoView({behavior:'smooth'})">Shop New Arrivals</button>
+      <a href="#categories" class="btn btn-ghost">Browse Categories</a>
+    </div>
+    <div class="hero-divider"><span class="ln"></span> COD &amp; Online Payment · Order in 60 Seconds <span class="ln"></span></div>
+    <div class="hero-dots" id="heroDots"></div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="trust-inner">
+    <span><strong>7+ Yrs</strong> Trusted Sellers</span>
+    <span><strong>3–5 Days</strong> Delivery, All Pakistan</span>
+    <span><strong>500+</strong> Happy Customers</span>
+    <span><strong>24/7</strong> WhatsApp Order Support</span>
+  </div>
+</div>
+
+<section class="block" id="categories">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Shop by Category</span>
+      <h2>Five worlds, one order.</h2>
+    </div>
+    <p>Tap a category to jump straight to it — each one has its own section below.</p>
+  </div>
+  <div class="cat-grid reveal-stagger">
+    <a class="cat-card" href="#cat-ladies-unstitched">
+      <div class="thumb"><img src="images/PINTREST-Hit-Article-3Pc.jpeg" alt="Ladies unstitched fabric"></div>
+      <div class="meta"><span class="count">5 Items</span><h3>Ladies Unstitched</h3></div>
+    </a>
+    <a class="cat-card" href="#cat-ladies-stitched">
+      <div class="thumb"><img src="images/silk-LONG PRINTED-(2PC).jpeg" alt="Ladies stitched dress"></div>
+      <div class="meta"><span class="count">3 Items</span><h3>Ladies Stitched</h3></div>
+    </a>
+    <a class="cat-card" href="#cat-gents-unstitched">
+      <div class="thumb"><img src="images/gents-unstiched.jpeg" alt="Gents unstitched fabric"></div>
+      <div class="meta"><span class="count">10 Items</span><h3>Gents Unstitched</h3></div>
+    </a>
+    <a class="cat-card" href="#cat-home">
+      <div class="thumb"><img src="images/Coffe Beater.jpeg" alt="Kitchen and home appliances"></div>
+      <div class="meta"><span class="count">21 Items</span><h3>Kitchen &amp; Home</h3></div>
+    </a>
+  </div>
+</section>
+
+<section class="block">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Featured Picks</span>
+      <h2>Swipe through the favourites.</h2>
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn" onclick="shiftCarousel(-1)" aria-label="Scroll left">‹</button>
+      <button class="carousel-btn" onclick="shiftCarousel(1)" aria-label="Scroll right">›</button>
+    </div>
+  </div>
+  <div class="carousel-wrap reveal">
+    <div class="carousel-track" id="featuredTrack"></div>
+  </div>
+</section>
+
+<div class="ornament-divider"><span class="ln"></span><span class="diamond"></span><span class="ln"></span></div>
+
+<section class="block cat-section" id="cat-ladies-unstitched">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Ladies</span>
+      <h2>Unstitched Fabric</h2>
+    </div>
+    <p>This season's lawn &amp; fabric, sold by the suit — exact meters listed on every piece.</p>
+  </div>
+  <div class="product-grid reveal-stagger" data-cat-section="ladies-unstitched"></div>
+</section>
+
+<section class="block cat-section" id="cat-ladies-stitched">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Ladies</span>
+      <h2>Ready to Wear</h2>
+    </div>
+    <p>Stitched suits, straight off the rack — no tailor wait.</p>
+  </div>
+  <div class="product-grid reveal-stagger" data-cat-section="ladies-stitched"></div>
+</section>
+
+<section class="block cat-section" id="cat-gents-unstitched">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Gents</span>
+      <h2>Unstitched Fabric</h2>
+    </div>
+    <p>Fabric by the suit length — take it to your own tailor.</p>
+  </div>
+  <div class="product-grid reveal-stagger" data-cat-section="gents-unstitched"></div>
+</section>
+
+<section class="block cat-section" id="cat-home">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Kitchen &amp; Home</span>
+      <h2>Everyday Essentials</h2>
+    </div>
+    <p>The appliances you keep meaning to order.</p>
+  </div>
+  <div class="product-grid reveal-stagger" data-cat-section="home"></div>
+</section>
+
+<div class="ornament-divider"><span class="ln"></span><span class="diamond"></span><span class="ln"></span></div>
+
+<div class="why-strip" id="why">
+  <div class="why-grid reveal-stagger">
+    <div class="why-item">
+      <div class="emblem sm"><span class="letter">01</span></div>
+      <h3>60-Second Checkout</h3>
+      <p>No account, no long forms. Name, phone, address — done. Pay on delivery or online, your call.</p>
+    </div>
+    <div class="why-item">
+      <div class="emblem sm"><span class="letter">02</span></div>
+      <h3>Order on WhatsApp Too</h3>
+      <p>Not a fan of forms? Tap the WhatsApp button and place the same order in a chat.</p>
+    </div>
+    <div class="why-item">
+      <div class="emblem sm"><span class="letter">03</span></div>
+      <h3>Real Fabric, Real Fit</h3>
+      <p>Every unstitched piece lists exact meters and fabric type — no surprises when it arrives.</p>
+    </div>
+    <div class="why-item">
+      <div class="emblem sm"><span class="letter">04</span></div>
+      <h3>7-Day Returns</h3>
+      <p>Wrong size or changed your mind — send it back within a week, no awkward questions.</p>
+    </div>
+  </div>
+</div>
+
+<div class="ornament-divider"><span class="ln"></span><span class="diamond"></span><span class="ln"></span></div>
+
+<div class="band">
+  <div class="band-inner reveal">
+    <img src="images/buyanythingx.logo.jpeg" alt="Buy AnythingX logo" class="brand-logo brand-logo-md">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-slide active">
+        <h2>"Order kiya subha, WhatsApp pe confirm hua, agli shaam parcel ghar pe tha. Bilkul stress-free."</h2>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testi-slide">
+        <h2>"Unstitched fabric bilkul waisa hi tha jaisa website pe dikhaya gaya — quality pe koi compromise nahi."</h2>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testi-slide">
+        <h2>"COD ka option hona sab se bara sukoon hai. Kitchen appliance bhi order ki, ek hi jaga sab mil gaya."</h2>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</div>
+
+<div class="ornament-divider"><span class="ln"></span><span class="diamond"></span><span class="ln"></span></div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="images/buyanythingx.logo.jpeg" alt="Buy AnythingX logo" class="brand-logo brand-logo-sm">
+        <span class="logo-text" style="font-size:1.3rem;">Buy Anything<span class="x">X</span></span>
+      </div>
+      <p style="max-width:260px;">Karachi-based store for premium ladies &amp; gents clothing and everyday home essentials.</p>
+    </div>
+    <div>
+      <h5>Shop</h5>
+      <a href="#cat-ladies-unstitched">Ladies Unstitched</a><br>
+      <a href="#cat-ladies-stitched">Ladies Stitched</a><br>
+      <a href="#cat-gents-stitched">Gents Stitched</a><br>
+      <a href="#cat-gents-unstitched">Gents Unstitched</a><br>
+      <a href="#cat-home">Kitchen &amp; Home</a>
+    </div>
+    <div>
+      <h5>Support</h5>
+      <a href="#">Track Order</a><br>
+      <a href="#">Returns Policy</a><br>
+      <a href="#">Delivery Info</a>
+    </div>
+    <div>
+      <h5>Get in Touch</h5>
+      <p><a href="https://wa.me/923491483899" target="_blank" rel="noopener">WhatsApp: 0349-1483899</a></p>
+      <p>Karachi, Pakistan</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/buyanythingx" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1MLdqbKcKy/" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8.5h2.5V5.2h-2.7c-2.6 0-4.3 1.7-4.3 4.4v2.3H8v3.3h2.5V22h3.4v-6.8h2.6l.5-3.3h-3.1V9.9c0-.9.4-1.4 1.1-1.4z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@buyanythingx" target="_blank" rel="noopener" aria-label="TikTok" class="social-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15.5 3v9.8a3.6 3.6 0 1 1-3.1-3.56"/><path d="M15.5 3c.3 2.4 2 4.3 4.4 4.6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Buy AnythingX. All rights reserved.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/923491483899?text=Hi%20Buy%20AnythingX%2C%20I%27d%20like%20to%20place%20an%20order" class="wa-float" aria-label="Order on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.13 1.59 5.93L.1 24l6.34-1.63a11.86 11.86 0 0 0 5.6 1.42h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.15-3.41-8.43ZM12.05 21.7h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.76.97 1-3.66-.23-.38a9.83 9.83 0 0 1-1.51-5.17C2.17 6.44 6.61 2 12.05 2c2.63 0 5.1 1.03 6.96 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.44-4.43 9.81-9.85 9.81Zm5.4-7.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.47s1.06 2.86 1.21 3.06c.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg></a>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Your Bag</h3>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot" style="display:none;">
+    <div class="subtotal-row"><span>Subtotal</span><strong id="subtotalAmt">Rs. 0</strong></div>
+    <div class="note">Delivery calculated at checkout. COD &amp; online payment both available.</div>
+    <button class="checkout-btn" onclick="openCheckout()">Checkout →</button>
+  </div>
+</div>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <div id="checkoutForm">
+      <div class="modal-head">
+        <div>
+          <h3>Almost done</h3>
+          <p>Just enough details to get this to your door.</p>
+        </div>
+        <button onclick="closeCheckout()" style="font-size:1.2rem; color:var(--cream-dim);">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="field"><label>Full Name</label><input type="text" id="custName" placeholder="Ayesha Khan"></div>
+        <div class="field"><label>Phone Number</label><input type="tel" id="custPhone" placeholder="03XX-XXXXXXX"></div>
+        <div class="field"><label>Delivery Address</label><input type="text" id="custAddress" placeholder="House #, Street, Area"></div>
+        <div class="field"><label>City</label>
+          <select id="custCity"><option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Other</option></select>
+        </div>
+        <div class="field">
+          <label>Payment Method</label>
+          <div class="pay-toggle">
+            <div class="pay-opt selected" id="payCOD" onclick="selectPay('cod')">Cash on Delivery</div>
+            <div class="pay-opt" id="payOnline" onclick="selectPay('online')">Pay Online</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="checkout-btn" onclick="placeOrder()">Place Order — <span id="modalTotal">Rs. 0</span></button>
+        <a href="https://wa.me/923491483899?text=Hi%20Buy%20AnythingX%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noopener" class="btn btn-ghost" style="justify-content:center;">Or Send This Order on WhatsApp</a>
+      </div>
+    </div>
+    <div class="success-note" id="successNote">
+      <div class="check"><div class="emblem"><span class="letter">✓</span></div></div>
+      <h3>Order Placed</h3>
+      <p>Thanks — your order details have been sent to us on WhatsApp. We'll confirm delivery timing there shortly. If WhatsApp didn't open automatically, please check your pop-up blocker.</p>
+      <button class="btn btn-primary" style="margin-top:20px; width:100%; justify-content:center;" onclick="closeCheckout()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
