@@ -6,14 +6,18 @@ const CAT_LABELS = {
   };
 
   const PRODUCTS = [
-    {id:1, cat:'ladies-unstitched', name:"Rose Zari Unstitched Lawn (3pc)", price:3450, was:4200, img:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&q=80", badge:"Premium"},
-    {id:2, cat:'ladies-stitched', name:"Emerald Embroidered Stitched Suit", price:5900, img:"https://images.unsplash.com/photo-1583743089695-4b566222e6ec?w=400&q=80", badge:"New"},
-    {id:4, cat:'gents-unstitched', name:"Classic Cotton Unstitched (2pc)", price:2100, was:2600, img:"https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?w=400&q=80", badge:"Sale"},
-    {id:5, cat:'home', name:"5-Speed Electric Hand Blender", price:2650, img:"https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400&q=80"},
-    {id:6, cat:'home', name:"Non-Stick 3pc Cookware Set", price:4990, img:"https://images.unsplash.com/photo-1584990347449-a5d9f800a783?w=400&q=80", badge:"New"},
-    {id:7, cat:'ladies-unstitched', name:"Mustard Digital Print Lawn (3pc)", price:3150, img:"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&q=80"},
-    {id:9, cat:'ladies-stitched', name:"Blush Chikankari Stitched Suit", price:4700, img:"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&q=80", badge:"New"},
-    {id:10, cat:'gents-unstitched', name:"Steel Grey Wash-n-Wear (2pc)", price:2300, img:"https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?w=400&q=80"},
+    {id:1, cat:'gents-unstitched', name:"J. Premium Quality Fabric", price:2200, was:4200, img:"images/gents-unstiched.jpeg", badge:"Premium"},
+    {id:2, cat:'ladies-stitched', name:"Silk Long Printed (2pc)", price:2250, img:"images/silk-long-printed(2pc).jpeg", badge:"New"},
+    {id:2, cat:'ladies-stitched', name:" OBSIDIAN LUXE (Soft Cotton) (2PC)", price:1900, img:"images/obsidian luxe 2pc.jpeg", badge:"New"},
+    {id:7, cat:'ladies-unstitched', name:" Hit Article 3Pc Fancy in Summer Collection", price:3850, img:"images/Hit-Article-3Pc-Fancy-in-Summer-Collection.jpeg"},
+    {id:7, cat:'ladies-unstitched', name:"Jazmin Hit Article (3pc)", price:2650, img:"images/jazmin-3pc-hit-article.jpeg"},
+    {id:10, cat:'gents-unstitched', name:"Gul Ahmed Wash & Wear Premium Quality", price:2350, img:"images/gul-ahmed-.jpeg"},
+    {id:5, cat:'home', name:"Laptop Table", price:1700, img:"images/Laptop table.jpeg"},
+    {id:6, cat:'home', name:"Digital Weight Scale Max Weight (180)", price:1800, img:"images/weight-scale.jpeg", badge:"New"},
+     {id:7, cat:'ladies-unstitched', name:"Hit Article (3pc)", price:3350, img:"images/hit-article-3pc.jpeg"},
+
+      {id:5, cat:'home', name:"Rechargeable Coffe Beater,USB Charging Egg Beater Handheld 3-Speed Adjustable Blender", price:1050, img:"images/Coffe Beater.jpeg"},
+      {id:5, cat:'home', name:"Foldable Electric Mini Washing Machine", price:3400, img:"images/MINI Washing Machine.jpg"},
   ];
 
   let cart = {};
