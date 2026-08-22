@@ -1,6 +1,7 @@
 const CAT_LABELS = {
     'ladies-unstitched': 'Ladies Unstitched',
     'ladies-stitched': 'Ladies Stitched',
+    'abayas': 'Abayas',
     'gents-unstitched': 'Gents Unstitched',
     'home': 'Kitchen & Home'
   };
@@ -14,10 +15,17 @@ const CAT_LABELS = {
     {id:10, cat:'gents-unstitched', name:"Gul Ahmed Wash & Wear Premium Quality", price:2350, img:"images/gul-ahmed-.jpeg"},
     {id:5, cat:'home', name:"Laptop Table", price:1700, img:"images/Laptop table.jpeg"},
     {id:6, cat:'home', name:"Digital Weight Scale Max Weight (180)", price:1800, img:"images/weight-scale.jpeg", badge:"New"},
-     {id:7, cat:'ladies-unstitched', name:"Hit Article (3pc)", price:3350, img:"images/hit-article-3pc.jpeg"},
+    {id:7, cat:'ladies-unstitched', name:"Hit Article (3pc)", price:3350, img:"images/hit-article-3pc.jpeg"},
+    {id:5, cat:'home', name:"Rechargeable Coffe Beater,USB Charging Egg Beater Handheld 3-Speed Adjustable Blender",price:1050, img:"images/Coffe Beater.jpeg"},
+    {id:5, cat:'home', name:"Foldable Electric Mini Washing Machine", price:3400, img:"images/MINI Washing Machine.jpg"},
+    {id:2, cat:'ladies-stitched', name:"DREAM DRAPE (3PC) WITH CHIFFON DUPATTA", price:2499, img:"images/DREAM-DRAPE.jpeg"},
+    {id:2, cat:'ladies-stitched', name:"NEW HEART EMBROIDERY (3PC) WITH CHIFFON DUPATTA", price:2699, img:"images/HEART-EMBROIDERY-(3PC).jpeg"},
+    {id:7, cat:'ladies-unstitched', name:"Maria B Hit Article", price:2450, img:"images/maria-b.jpeg"},
+    {id:20, cat:'abayas', name:"AL-LAMSA EMBROIDERY Nida ABAYA", price:2750, img:"images/al-lamsa-abaya.jpeg", badge:"New"},
+    {id:20, cat:'abayas', name:"EVY MIST ABAYA  WITH STOLLER", price:2450, img:"images/evy-mist-abaya.jpeg", badge:"New"},
+    {id:10, cat:'gents-unstitched', name:"Alkaram Hit Article", price:2450, img:"images/alkaram-gents.jpeg"},
 
-      {id:5, cat:'home', name:"Rechargeable Coffe Beater,USB Charging Egg Beater Handheld 3-Speed Adjustable Blender", price:1050, img:"images/Coffe Beater.jpeg"},
-      {id:5, cat:'home', name:"Foldable Electric Mini Washing Machine", price:3400, img:"images/MINI Washing Machine.jpg"},
+      
   ];
 
   let cart = {};
