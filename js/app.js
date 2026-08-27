@@ -6,27 +6,25 @@ const CAT_LABELS = {
     'home': 'Kitchen & Home'
   };
 
-  const PRODUCTS = [
-    {id:1, cat:'gents-unstitched', name:"J. Premium Quality Fabric", price:2200, was:4200, img:"images/gents-unstiched.jpeg", badge:"Premium"},
-    {id:2, cat:'ladies-stitched', name:"Silk Long Printed (2pc)", price:2250, img:"images/silk-long-printed(2pc).jpeg", badge:"New"},
-    {id:2, cat:'ladies-stitched', name:" OBSIDIAN LUXE (Soft Cotton) (2PC)", price:1900, img:"images/obsidian luxe 2pc.jpeg", badge:"New"},
-    {id:7, cat:'ladies-unstitched', name:" Hit Article 3Pc Fancy in Summer Collection", price:3850, img:"images/Hit-Article-3Pc-Fancy-in-Summer-Collection.jpeg"},
-    {id:7, cat:'ladies-unstitched', name:"Jazmin Hit Article (3pc)", price:2650, img:"images/jazmin-3pc-hit-article.jpeg"},
-    {id:10, cat:'gents-unstitched', name:"Gul Ahmed Wash & Wear Premium Quality", price:2350, img:"images/gul-ahmed-.jpeg"},
-    {id:5, cat:'home', name:"Laptop Table", price:1700, img:"images/Laptop table.jpeg"},
-    {id:6, cat:'home', name:"Digital Weight Scale Max Weight (180)", price:1800, img:"images/weight-scale.jpeg", badge:"New"},
-    {id:7, cat:'ladies-unstitched', name:"Hit Article (3pc)", price:3350, img:"images/hit-article-3pc.jpeg"},
-    {id:5, cat:'home', name:"Rechargeable Coffe Beater,USB Charging Egg Beater Handheld 3-Speed Adjustable Blender",price:1050, img:"images/Coffe Beater.jpeg"},
-    {id:5, cat:'home', name:"Foldable Electric Mini Washing Machine", price:3400, img:"images/MINI Washing Machine.jpg"},
-    {id:2, cat:'ladies-stitched', name:"DREAM DRAPE (3PC) WITH CHIFFON DUPATTA", price:2499, img:"images/DREAM-DRAPE.jpeg"},
-    {id:2, cat:'ladies-stitched', name:"NEW HEART EMBROIDERY (3PC) WITH CHIFFON DUPATTA", price:2699, img:"images/HEART-EMBROIDERY-(3PC).jpeg"},
-    {id:7, cat:'ladies-unstitched', name:"Maria B Hit Article", price:2450, img:"images/maria-b.jpeg"},
-    {id:20, cat:'abayas', name:"AL-LAMSA EMBROIDERY Nida ABAYA", price:2750, img:"images/al-lamsa-abaya.jpeg", badge:"New"},
-    {id:20, cat:'abayas', name:"EVY MIST ABAYA  WITH STOLLER", price:2450, img:"images/evy-mist-abaya.jpeg", badge:"New"},
-    {id:10, cat:'gents-unstitched', name:"Alkaram Hit Article", price:2450, img:"images/alkaram-gents.jpeg"},
-
-      
-  ];
+ const PRODUCTS = [
+  {id:1, cat:'gents-unstitched', name:"J. Premium Quality Unstitched Fabric for Men", price:2200, was:4200, img:"images/gents-unstiched.jpeg", badge:"Premium"},
+  {id:2, cat:'ladies-stitched', name:"Silk Long Printed 2 Piece Ladies Suit", price:2250, img:"images/silk-long-printed(2pc).jpeg", badge:"New"},
+  {id:2, cat:'ladies-stitched', name:"Obsidian Luxe Soft Cotton 2 Piece Ladies Suit", price:1900, img:"images/obsidian luxe 2pc.jpeg", badge:"New"},
+  {id:7, cat:'ladies-unstitched', name:"Hit Article 3 Piece Fancy Ladies Suit - Summer Collection", price:3850, img:"images/Hit-Article-3Pc-Fancy-in-Summer-Collection.jpeg"},
+  {id:7, cat:'ladies-unstitched', name:"Jazmin Hit Article 3 Piece Unstitched Suit", price:2650, img:"images/jazmin-3pc-hit-article.jpeg"},
+  {id:10, cat:'gents-unstitched', name:"Gul Ahmed Wash & Wear Premium Quality Unstitched Fabric", price:2350, img:"images/gul-ahmed-.jpeg"},
+  {id:5, cat:'home', name:"Foldable Laptop Table for Home & Office", price:1700, img:"images/Laptop table.jpeg"},
+  {id:6, cat:'home', name:"Digital Weight Scale - 180kg Capacity", price:1800, img:"images/weight-scale.jpeg", badge:"New"},
+  {id:7, cat:'ladies-unstitched', name:"Hit Article 3 Piece Unstitched Ladies Suit", price:3350, img:"images/hit-article-3pc.jpeg"},
+  {id:5, cat:'home', name:"Rechargeable Coffee Beater - USB Charging 3-Speed Hand Blender", price:1050, img:"images/Coffe Beater.jpeg"},
+  {id:5, cat:'home', name:"Foldable Electric Mini Washing Machine", price:3400, img:"images/MINI Washing Machine.jpg"},
+  {id:2, cat:'ladies-stitched', name:"Dream Drape 3 Piece Suit with Chiffon Dupatta", price:2499, img:"images/DREAM-DRAPE.jpeg"},
+  {id:2, cat:'ladies-stitched', name:"New Heart Embroidery 3 Piece Suit with Chiffon Dupatta", price:2699, img:"images/HEART-EMBROIDERY-(3PC).jpeg"},
+  {id:7, cat:'ladies-unstitched', name:"Maria B Hit Article Unstitched Ladies Suit", price:2450, img:"images/maria-b.jpeg"},
+  {id:20, cat:'abayas', name:"Al-Lamsa Embroidery Nida Abaya", price:2750, img:"images/al-lamsa-abaya.jpeg", badge:"New"},
+  {id:20, cat:'abayas', name:"Evy Mist Abaya with Stoller", price:2450, img:"images/evy-mist-abaya.jpeg", badge:"New"},
+  {id:10, cat:'gents-unstitched', name:"Alkaram Hit Article Unstitched Fabric for Men", price:2450, img:"images/alkaram-gents.jpeg"}
+];
 
   let cart = {};
 
